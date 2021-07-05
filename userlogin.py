@@ -180,13 +180,14 @@ def cash_withdrawal_menu():
             functions.cash_withdraw(active_user,withdraw_amount)
         
         elif(withdraw_choice=="6"):
-            withdraw_amount=int(input("Enter the amount  :  "))
-            if(withdraw_amount>500):
+              withdraw_amount=int(input("Enter the amount  :  "))
+              if(withdraw_amount>500):
                 print(" Maximum withdrawal in a transaction is 500..please try again")
                 input("Please enter to return.....")
                 cash_withdrawal_menu()
-            else:
+              else:
                 functions.cash_withdraw(active_user,withdraw_amount)
+            
         else:
             print("Invalid Entry..Please try again....")
             cash_withdrawal_menu()
