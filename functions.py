@@ -14,7 +14,7 @@ def clear_screen():
 
 def cash_withdraw(active_user,withdraw_amount):
     clear_screen()
-    print("          Irish Bank")
+    print("          Irish Bank CASH WITHDRAWAL")
     print("         ------------")
     for user in account_list:
         if user['Account_no']==active_user['Account_no']:
@@ -57,7 +57,7 @@ def cash_withdraw(active_user,withdraw_amount):
 
 def cash_deposit(active_user):
     clear_screen()
-    print("          Irish Bank")
+    print("          Irish Bank  CASH DEPOSIT")
     print("         ------------")
     for user in account_list:
         if user['Account_no']==active_user['Account_no']:
@@ -93,7 +93,7 @@ def generate_report(active_user):
     print("---------------------------------------------------------------------")
     for user in transaction_list:
         if user['Account_no']==active_user['Account_no']:
-             print(f"{user['Transaction_id'].ljust(17)} {user['Transaction_date'].ljust(12)} {user['Transaction_type'].ljust(10)} {user['Transaction_amount']}        {user['Balance']}") #display_users()
+             print(f"{user['Transaction_id'].ljust(17)} {user['Transaction_date'].ljust(12)} {user['Transaction_type'].ljust(10)} {str(user['Transaction_amount']).ljust(10)} {user['Balance']}") #display_users()
     print("-----------------------------------------------------------------------")
 # function for changing pin
 

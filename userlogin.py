@@ -118,7 +118,7 @@ def main_menu():
         if (choice=="Y"):
            functions.change_pin(active_user)  
         else:
-            print("Pin change canelled")
+            print("Pin change cancelled")
             input("Enter return to continue...")
             clear_screen()
             main_menu()
